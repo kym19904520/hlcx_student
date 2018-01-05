@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/topic_margin"
+    android:layout_marginRight="@dimen/topic_margin"
+    android:background="@color/def_sub_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@id/iv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/sy_15" />
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/topic_padding"
+        android:paddingRight="@dimen/topic_padding">
+
+        <TextView
+            style="@style/tv_topic_type"
+            android:text="问答题" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/topic_title_margin_left"
+            android:text="从这个文章中你得到的什么信息？"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/topic_title_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_title">
+
+        <TextView
+            style="@style/tv_topic_tip_title"
+            android:layout_marginLeft="@dimen/topic_padding"
+            android:text="知识点" />
+
+        <TextView
+            style="@style/tv_topic_tip"
+            android:layout_marginLeft="@dimen/topic_title_margin_left"
+            android:text="阅读理解" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_hint"
+        android:layout_marginLeft="@dimen/topic_answer_margin"
+        android:layout_marginRight="@dimen/topic_answer_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="       俄罗斯卫星网5月30日报道称，据俄罗斯《消息报》报道，俄罗斯特种部队和特种行动部队战士获得独特的隐形斗篷，这种斗篷实际上让热成像仪和夜视设备无法发现他们。部队已经获得数套隐形斗篷，目前正在检验这种产品，将根据检验结果决定采购隐形斗篷的问题。" />
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_below="@id/ll_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/icon_photo"/>
+
+    </LinearLayout>-->
+    <ImageView
+        android:layout_below="@id/ll_answer"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="20dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/img_phone"
+        />
+
+</RelativeLayout>
+

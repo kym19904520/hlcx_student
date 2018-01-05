@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_sms_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:text="验证码已发送到 1865000000"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="10dp"
+        android:textSize="13sp"
+        android:padding="10dp"
+        android:background="@mipmap/sms_info_bg"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/def_sub_bg"
+        android:gravity="center_vertical"
+        >
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:inputType="number"
+            android:hint="请输入验证码"
+            android:padding="@dimen/padding_normal"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/login_text_size" />
+
+        <TextView
+            android:id="@+id/tv_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_green"
+            android:background="@drawable/border_green_round"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:text="获取验证码"
+            />
+
+    </LinearLayout>
+    <View style="@style/Line.Hor_margin" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/def_sub_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/et_psw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="请输入密码"
+                android:maxLength="16"
+                android:padding="@dimen/padding_normal"
+                android:inputType="textPassword"
+                android:textColorHint="@color/text_hint"
+                android:textSize="@dimen/login_text_size" />
+
+            <ImageView
+                android:id="@+id/iv_eye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:src="@drawable/selector_eye" />
+        </LinearLayout>
+    </LinearLayout>
+        <Button
+            android:id="@+id/btn_stu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/big_btn_height"
+            android:layout_marginLeft="@dimen/big_btn_margin_l_r"
+            android:layout_marginRight="@dimen/big_btn_margin_l_r"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_blue_background"
+            android:text="完成注册"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/big_btn_text_size" />
+    </LinearLayout>

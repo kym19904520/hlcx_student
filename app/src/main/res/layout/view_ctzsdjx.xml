@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tree_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/def_sub_bg" />
+
+    <include
+        layout="@layout/view_empty"></include>
+
+</FrameLayout>

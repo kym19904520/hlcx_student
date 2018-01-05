@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color">
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/Top_Back" />
+
+        <TextView
+            style="@style/Top_Title"
+            android:text="消息列表"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_home_dyn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/def_sub_bg"
+        android:divider="@null"
+        android:scrollbars="none"></ListView>
+
+    <include layout="@layout/view_empty"/>
+</LinearLayout>

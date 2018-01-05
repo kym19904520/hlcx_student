@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_more">20dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="margin_more">20dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_samll">10dp</dimen>
+    <dimen name="drawble_padding">5dp</dimen>
+    <dimen name="spinner_padding">5dp</dimen>
+    <dimen name="gap_height">8dp</dimen>
+    <!--以上数值不可更改-->
+    <dimen name="errors_gap_height">15dp</dimen>
+
+    <dimen name="bottom_size">13sp</dimen>
+    <dimen name="bottom_icon_size">25dp</dimen>
+
+    <dimen name="top_height">52dp</dimen>
+    <dimen name="top_back_size">10dp</dimen>
+    <dimen name="top_title_size">18sp</dimen>
+    <dimen name="top_right_size">17sp</dimen>
+
+    <dimen name="tab_padding">10dp</dimen>
+    <dimen name="tab_text_size">17sp</dimen>
+
+    <dimen name="text_big">24sp</dimen>
+    <dimen name="text_more">18sp</dimen>
+    <dimen name="text_normal">14sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+
+    <dimen name="big_btn_height">45dp</dimen>
+    <dimen name="big_btn_padding_t_b">10dp</dimen>
+    <dimen name="big_btn_padding_l_r">100dp</dimen>
+    <dimen name="big_btn_drawble_padding">5dp</dimen>
+    <dimen name="big_btn_text_size">18sp</dimen>
+    <dimen name="big_btn_margin_l_r">30dp</dimen>
+
+    <dimen name="bottom_btn_height">55dp</dimen>
+    <dimen name="bottom_text_padding">15dp</dimen>
+    <dimen name="bottom_text_size">18sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="tow_text_margin">3dp</dimen>
+    <dimen name="text_padding_samll">10dp</dimen>
+    <dimen name="text_padding_normal">16dp</dimen>
+    <dimen name="text_title_padding_t_b">8dp</dimen>
+
+    <dimen name="btn_text_padding_lr">15dp</dimen>
+    <dimen name="btn_text_padding_tp">3dp</dimen>
+
+    <dimen name="home_dialog_margin">50dp</dimen>
+    <dimen name="topic_margin">20dp</dimen>
+    <dimen name="topic_title_margin_left">10dp</dimen>
+    <dimen name="topic_padding">20dp</dimen>
+    <dimen name="topic_answer_margin">30dp</dimen>
+    <dimen name="topic_answer_margin_top">20dp</dimen>
+    <dimen name="topic_answer_margin_bottom">40dp</dimen>
+    <dimen name="topic_title_text">16sp</dimen>
+    <dimen name="topic_title_padding">8dp</dimen>
+    <dimen name="topic_answer_text">16sp</dimen>
+    <dimen name="topic_answer_title_text">17sp</dimen>
+    <dimen name="topic_tip_text">12sp</dimen>
+
+    <dimen name="task_text_title_1">16sp</dimen>
+    <dimen name="task_padding_1">10dp</dimen>
+
+    <dimen name="tag_padding_l_r">8dp</dimen>
+    <dimen name="tag_padding_t_b">2dp</dimen>
+
+    <dimen name="padding_1_t_b">15dp</dimen>
+    <dimen name="padding_1_l_r">25dp</dimen>
+
+    <dimen name="my_item_ts">15sp</dimen>
+    <dimen name="my_item_ts_big">19sp</dimen>
+    <dimen name="error_item_ts">15sp</dimen>
+    <dimen name="homework_result_text">12sp</dimen>
+
+    <dimen name="error_icon">15dp</dimen>
+    <dimen name="error_img_width">100dp</dimen>
+    <dimen name="error_img_height">80dp</dimen>
+
+    <dimen name="login_text_size">15sp</dimen>
+    <dimen name="whell_width">50dp</dimen>
+
+</resources>

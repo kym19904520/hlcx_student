@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_height"
+            android:background="@color/top_bar_color">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_height"
+                android:background="@color/top_bar_color">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    style="@style/Top_Back" />
+
+                <TextView
+                    style="@style/Top_Title"
+                    android:text="答题卡" />
+
+                <TextView
+                    android:id="@+id/tv_submit"
+                    style="@style/Top_Right"
+                    android:text="提交" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/def_sub_bg"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/sy_11"
+                android:drawablePadding="@dimen/drawble_padding"
+                android:gravity="center_vertical"
+                android:text="语文二年级习题（50题）"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_normal" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/sy_51"
+                android:drawablePadding="@dimen/drawble_padding"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text=""
+                />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

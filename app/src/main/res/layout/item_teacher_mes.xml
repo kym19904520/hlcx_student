@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/def_sub_bg"
+    android:padding="@dimen/padding_normal"
+    >
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/wd_21"
+        />
+    <LinearLayout
+        android:layout_toRightOf="@id/iv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        >
+        <TextView
+            android:id="@+id/tv_parent_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张美"
+            android:textColor="@color/text_black"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="语文"
+            android:background="@drawable/round_green_background"
+            android:paddingLeft="@dimen/tag_padding_l_r"
+            android:paddingRight="@dimen/tag_padding_l_r"
+            android:paddingBottom="@dimen/tag_padding_t_b"
+            android:paddingTop="@dimen/tag_padding_t_b"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/text_white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/wd_20"
+        />
+</RelativeLayout>

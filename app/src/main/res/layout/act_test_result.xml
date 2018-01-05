@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color">
+
+        <TextView
+            android:id="@+id/tv_goto_home"
+            style="@style/Top_Back_Tv"
+            android:text="首页"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="试卷分析"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/top_title_size"
+            android:textStyle="bold" />
+        <TextView
+            style="@style/Top_Right"
+            android:id="@+id/tv_goto_error"
+            android:text="错题库" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/def_sub_bg"
+                android:paddingBottom="30dp">
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/sy_34" />
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/iv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:text="得分"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_big"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="在本班中，超过0%的人"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_normal" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/def_sub_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:padding="@dimen/task_padding_1"
+                    android:text="知识点分析"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_normal" />
+                <com.up.common.widget.MyListView
+                    android:id="@+id/mylv_know"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.up.common.widget.MyListView>
+               <!-- <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/task_padding_1"
+                    android:text="拼音拼写"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/task_text_title_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/task_padding_1"
+                    android:paddingLeft="@dimen/task_padding_1"
+                    android:paddingRight="@dimen/task_padding_1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="题数 20"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="班级正确率 83%"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/drawble_padding"
+                        android:drawableRight="@mipmap/sy_35"
+                        android:text="班级正确率 93%"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+                </LinearLayout>
+
+                <View style="@style/Line.Hor_margin" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/task_padding_1"
+                    android:text="拼音语调"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/task_text_title_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/task_padding_1"
+                    android:paddingLeft="@dimen/task_padding_1"
+                    android:paddingRight="@dimen/task_padding_1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="题数 20"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="班级正确率 83%"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/drawble_padding"
+                        android:drawableRight="@mipmap/sy_35"
+                        android:text="班级正确率 93%"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+                </LinearLayout>
+
+                <View style="@style/Line.Hor_margin" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/task_padding_1"
+                    android:text="词语意思"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/task_text_title_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/task_padding_1"
+                    android:paddingLeft="@dimen/task_padding_1"
+                    android:paddingRight="@dimen/task_padding_1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="题数 20"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="班级正确率 83%"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/drawble_padding"
+                        android:drawableRight="@mipmap/sy_35"
+                        android:text="班级正确率 93%"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+                </LinearLayout>
+
+                <View style="@style/Line.Hor_margin" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/task_padding_1"
+                    android:text="词语使用"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/task_text_title_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/task_padding_1"
+                    android:paddingLeft="@dimen/task_padding_1"
+                    android:paddingRight="@dimen/task_padding_1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="题数 20"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="班级正确率 83%"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/drawble_padding"
+                        android:drawableRight="@mipmap/sy_35"
+                        android:text="班级正确率 93%"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+                </LinearLayout>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/def_sub_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/error_pink"
+                    android:padding="@dimen/task_padding_1"
+                    android:text="错误原因"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_normal" />
+                <com.up.common.widget.MyListView
+                    android:id="@+id/mylv_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.up.common.widget.MyListView>
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/task_padding_1"
+                    android:text="@string/error_reason_1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/task_text_title_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/task_padding_1"
+                    android:paddingLeft="@dimen/task_padding_1"
+                    android:paddingRight="@dimen/task_padding_1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="题数 20"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="错误占比 83%"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+
+                </LinearLayout>
+
+                <View style="@style/Line.Hor_margin" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/task_padding_1"
+                    android:text="@string/error_reason_2"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/task_text_title_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/task_padding_1"
+                    android:paddingLeft="@dimen/task_padding_1"
+                    android:paddingRight="@dimen/task_padding_1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="题数 20"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="错误占比  83%"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+
+                </LinearLayout>
+
+                <View style="@style/Line.Hor_margin" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/task_padding_1"
+                    android:text="@string/error_reason_3"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/task_text_title_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/task_padding_1"
+                    android:paddingLeft="@dimen/task_padding_1"
+                    android:paddingRight="@dimen/task_padding_1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="题数 20"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="班级正确率 83%"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+
+                </LinearLayout>
+
+                <View style="@style/Line.Hor_margin" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/task_padding_1"
+                    android:text="@string/error_reason_4"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/task_text_title_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/task_padding_1"
+                    android:paddingLeft="@dimen/task_padding_1"
+                    android:paddingRight="@dimen/task_padding_1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="题数 20"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="班级正确率 83%"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="@dimen/text_small" />
+
+                </LinearLayout>-->
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

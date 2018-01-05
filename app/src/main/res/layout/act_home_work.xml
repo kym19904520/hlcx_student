@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/Top_Back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="家庭作业"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/top_title_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="语文二年级其中考卷"
+        android:textColor="@color/text_gray_s"
+        android:textSize="@dimen/text_more"
+        android:gravity="center"
+        />
+    <View style="@style/Line.Hor_margin"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="115题"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_gray_q"
+            android:textSize="@dimen/text_small"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="2017-04-13"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/text_gray_q"
+            android:textSize="@dimen/text_small"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/text_white"
+        android:layout_margin="30dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            >
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/def_img"
+                />
+            <TextView
+                android:id="@+id/tv_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_alignRight="@id/iv"
+                android:layout_alignBottom="@id/iv"
+                android:background="@drawable/round_blue_background"
+                android:padding="3dp"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_small"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="任课老师："
+            android:textColor="@color/text_gray_s"
+            android:textSize="@dimen/text_more"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/btn_up"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/big_btn_height"
+            android:background="@drawable/round_blue_background"
+            android:layout_marginLeft="@dimen/big_btn_margin_l_r"
+            android:layout_marginRight="@dimen/big_btn_margin_l_r"
+            android:layout_marginTop="50dp"
+            android:text="开始做题"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/big_btn_text_size" />
+        <Button
+            android:id="@+id/btn_down"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/big_btn_height"
+            android:background="@drawable/round_green_background"
+            android:layout_marginLeft="@dimen/big_btn_margin_l_r"
+            android:layout_marginRight="@dimen/big_btn_margin_l_r"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="导出"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/big_btn_text_size" />
+    </LinearLayout>
+
+
+</LinearLayout>

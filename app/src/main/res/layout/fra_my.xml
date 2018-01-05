@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/top_bar_color">
+
+        <ImageView
+            android:id="@+id/iv_sz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginTop="17dp"
+            android:src="@mipmap/wd_sz"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/wd_head" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="13987979877"
+            android:textColor="@color/text_white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/text_white"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingBottom="25dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv111"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_phone"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="在本班排第一名"
+                android:textColor="@color/text_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv222"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_phone"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="在本班级排第一名"
+                android:textColor="@color/text_white"
+                android:textSize="12sp" />
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/wd_6" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/progressbar_color"
+                android:layout_width="200dp"
+                android:layout_height="12dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progress="50" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/wd_7" />-->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/def_sub_bg"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/text_padding_samll">
+
+            <TextView
+                android:id="@+id/tv_ct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/my_item_ts_big" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tow_text_margin"
+                android:text="错题"
+                android:textColor="@color/text_gray_q"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+
+        <View style="@style/Line.Ver_margin_5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/text_padding_samll">
+
+            <TextView
+                android:id="@+id/tv_zy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/my_item_ts_big" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tow_text_margin"
+                android:text="试卷"
+                android:textColor="@color/text_gray_q"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+
+        <View style="@style/Line.Ver_margin_5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/text_padding_samll">
+
+            <TextView
+                android:id="@+id/tv_zql"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/my_item_ts_big" />
+
+            <TextView
+                android:id="@+id/tv_zql_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tow_text_margin"
+                android:text="得分"
+                android:textColor="@color/text_gray_q"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_xqfx"
+        style="@style/my_rl_style"
+        android:layout_marginTop="@dimen/gap_height"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学情分析"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/my_item_ts" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_goto" />
+    </RelativeLayout>
+
+    <View style="@style/Line.Hor_margin" />
+
+    <RelativeLayout
+        android:id="@+id/rl_wdsj"
+        style="@style/my_rl_style"
+        android:layout_marginTop="@dimen/gap_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/my_item_ts" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_goto" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_lsly"
+        style="@style/my_rl_style"
+        android:layout_marginTop="@dimen/gap_height"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="老师留言"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/my_item_ts" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_goto" />
+    </RelativeLayout>
+
+    <View
+        android:visibility="gone"
+        style="@style/Line.Hor_margin" />
+
+    <RelativeLayout
+        android:id="@+id/rl_qz"
+        android:visibility="gone"
+        style="@style/my_rl_style">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="求助"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_normal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_goto" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_yjfk"
+        style="@style/my_rl_style"
+        android:layout_marginTop="@dimen/gap_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="意见反馈"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/my_item_ts" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_goto" />
+    </RelativeLayout>
+</LinearLayout>

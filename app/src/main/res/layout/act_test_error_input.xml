@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_height"
+            android:background="@color/top_bar_color">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_height"
+                android:background="@color/top_bar_color">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    style="@style/Top_Back" />
+
+                <TextView
+                    style="@style/Top_Title"
+                    android:text="试卷错题录入" />
+
+                <TextView
+                    android:id="@+id/tv_submit"
+                    style="@style/Top_Right"
+                    android:text="提交" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/def_sub_bg"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/sy_11"
+                android:drawablePadding="@dimen/drawble_padding"
+                android:gravity="center_vertical"
+                android:text="甘肃2试卷2017年6月30日（50题）"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="请选中错题"
+                android:textSize="14sp"
+                android:textColor="@color/text_gray_q" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:paddingBottom="@dimen/bottom_btn_height"
+            >
+        </ListView>
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单选题   （20）"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="共20分"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_normal" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/def_sub_bg"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:padding="15dp"
+            android:scrollbars="none"
+            android:numColumns="6"></GridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="多选题  （10）"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="共30分"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_normal" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gv_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/def_sub_bg"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:padding="15dp"
+            android:scrollbars="none"
+            android:numColumns="6"></GridView>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/text_white"
+            android:gravity="center"
+            android:text="错误"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/bottom_text_size" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="正确"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/bottom_text_size" />
+    </LinearLayout>
+</RelativeLayout>

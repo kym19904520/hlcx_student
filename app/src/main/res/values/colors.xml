@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00aeff</color><!--app主色调-->
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+
+    <color name="bottom_color">#ffffff</color><!--底部菜单背景色-->
+    <color name="def_bg">#F0F0F2</color><!--背景色-->
+    <color name="def_sub_bg">#FFFFFF</color><!--副背景色-->
+    <color name="top_bar_color">@color/colorPrimary</color><!--顶部标题背景色-->
+    <color name="bg_gray">#F5F5F5</color>
+    <color name="bg_tran">#00000000</color>
+
+    <color name="line">#DEDEDE</color><!--线条默认颜色-->
+    <color name="text_pink">#fff2e6</color><!--线条默认颜色-->
+    <color name="text_red">#ff4e4e</color><!--红色字体-->
+    <color name="bg_select_gray">#d4d4d4</color><!--灰背景-->
+    <color name="text_gray_s">#626262</color><!--深灰字体-->
+    <color name="text_gray_q">#999999</color><!--浅灰字体（日期）-->
+    <color name="text_hint">#d0d0d0</color><!--浅灰字体（日期）-->
+    <color name="btn_no_click">#b3b3b3</color><!--不能点击的按钮灰色-->
+    <color name="text_black">#343434</color><!--黑色字体-->
+    <color name="text_green">#4faf2a</color><!--绿色字体-->
+    <color name="bg_green">#79DB52</color><!--绿色字体-->
+    <color name="text_white">#ffffff</color><!--白色字体-->
+    <color name="text_blue">@color/colorPrimary</color><!--蓝色字体-->
+    <color name="bg_blue">#EDF9FF</color><!--蓝色背景-->
+    <color name="bg_blue_select">#E7F7FD</color><!--蓝色背景-->
+    <color name="bg_blue_select_alpha">#2300aeff</color><!--蓝色背景-->
+    <color name="text_origin">#FF7F00</color><!--橙色字体-->
+    <color name="line_pink">#FC4C7A</color><!--橙色字体-->
+    <color name="error_pink">#FC4C7A</color><!--错误答案背景色-->
+
+    <color name="common_bg_color">#F2F2FD</color>
+    <color name="press_btn_color">#ddd</color>
+</resources>

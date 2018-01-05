@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/topic_margin"
+        android:layout_marginRight="@dimen/topic_margin"
+        android:background="@color/def_sub_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@id/iv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/sy_15" />
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_1"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="@dimen/topic_padding"
+            android:paddingRight="@dimen/topic_padding">
+
+            <TextView
+                android:id="@+id/tv_subject_type"
+                style="@style/tv_topic_type"
+                android:text="单选题" />
+            <!--<TextView
+                android:id="@+id/tv_subject_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingBottom="5dp"
+                android:textSize="@dimen/topic_title_text"
+                android:textColor="@color/text_black"
+                android:layout_marginLeft="@dimen/topic_title_margin_left"
+                />-->
+            <WebView
+                android:id="@+id/wv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/topic_title_margin_left"
+                android:paddingBottom="5dp" />
+          <!--  <com.up.common.widget.RichText
+                android:id="@+id/wv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/topic_title_margin_left"
+                android:paddingBottom="5dp" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_title">
+
+            <TextView
+                style="@style/tv_topic_tip_title"
+                android:layout_marginLeft="@dimen/topic_padding"
+                android:text="知识点" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recylist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_hint"
+            android:layout_marginBottom="@dimen/topic_answer_margin_bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone" />
+        <!--客观题的选项-->
+        <com.up.common.widget.MyListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_hint"
+            android:layout_marginBottom="@dimen/topic_answer_margin_bottom"
+            android:overScrollMode="never"
+            android:divider="@null"
+            android:focusable="false"
+            android:scrollbars="none"></com.up.common.widget.MyListView>
+
+        <ImageView
+            android:id="@+id/iv_answer_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lv"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/ct_2"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_answer_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lv"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/ct_6"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

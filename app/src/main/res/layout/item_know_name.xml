@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_know_name"
+    style="@style/tv_topic_tip"
+    android:layout_marginLeft="@dimen/topic_title_margin_left"
+    android:text="拼音拼写" />

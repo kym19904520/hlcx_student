@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/Top_Back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人信息"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/top_title_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_height"
+        android:background="@color/def_sub_bg"
+        android:padding="@dimen/text_padding_normal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="头像"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_normal" />
+
+        <ImageView
+            android:id="@+id/iv_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_goto"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/wd_head" />
+    </RelativeLayout>
+
+    <View style="@style/Line.Hor_margin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/def_sub_bg"
+        android:padding="@dimen/text_padding_normal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="18650346868"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/bg_blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/topic_title_padding"
+            android:paddingLeft="@dimen/padding_normal"
+            android:paddingTop="@dimen/topic_title_padding"
+            android:text="学生信息"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_normal" />
+
+        <ImageView
+            android:id="@+id/iv_edit_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/text_padding_normal"
+            android:padding="@dimen/topic_title_padding"
+            android:src="@mipmap/wd_2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/def_sub_bg"
+        android:padding="@dimen/text_padding_normal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:id="@+id/tv_stu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_normal" />
+    </RelativeLayout>
+
+    <View style="@style/Line.Hor_margin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/def_sub_bg"
+        android:padding="@dimen/text_padding_normal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学号"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:id="@+id/tv_stu_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_normal" />
+    </RelativeLayout>
+
+    <View style="@style/Line.Hor_margin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/def_sub_bg"
+        android:padding="@dimen/text_padding_normal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="班级"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:id="@+id/tv_stu_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_normal" />
+    </RelativeLayout>
+</LinearLayout>

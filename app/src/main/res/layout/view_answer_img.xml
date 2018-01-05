@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/def_sub_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_blue"
+        android:paddingBottom="@dimen/topic_title_padding"
+        android:paddingLeft="@dimen/topic_margin"
+        android:paddingTop="@dimen/topic_title_padding"
+        android:text="拍照上传答案"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/top_title_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/topic_answer_margin"
+        android:layout_marginRight="@dimen/topic_answer_margin"
+        android:layout_marginTop="@dimen/topic_answer_margin_top"
+        android:layout_marginBottom="@dimen/topic_answer_margin_top"
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/error_iv_1"
+                android:layout_width="@dimen/error_img_width"
+                android:layout_height="@dimen/error_img_height"
+                android:src="@mipmap/sy_add_img"
+                />
+            <ImageView
+                android:id="@+id/error_iv_clear_1"
+                android:visibility="gone"
+                android:layout_width="@dimen/error_icon"
+                android:layout_height="@dimen/error_icon"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_error"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/error_iv_2"
+                android:layout_width="@dimen/error_img_width"
+                android:layout_height="@dimen/error_img_height"
+                android:src="@mipmap/sy_add_img"
+                />
+            <ImageView
+                android:id="@+id/error_iv_clear_2"
+                android:visibility="gone"
+                android:layout_width="@dimen/error_icon"
+                android:layout_height="@dimen/error_icon"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_error"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/error_iv_3"
+                android:layout_width="@dimen/error_img_width"
+                android:layout_height="@dimen/error_img_height"
+                android:src="@mipmap/sy_add_img"
+                />
+            <ImageView
+                android:id="@+id/error_iv_clear_3"
+                android:visibility="gone"
+                android:layout_width="@dimen/error_icon"
+                android:layout_height="@dimen/error_icon"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_error"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/Top_Back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="查询结果"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/top_title_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/magic_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/top_height" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/magic_indicator"
+        android:layout_marginBottom="@dimen/bottom_btn_height"
+        android:orientation="vertical">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_marginRight="@dimen/topic_margin"
+            android:layout_marginLeft="@dimen/topic_margin"
+            android:background="@color/def_sub_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+       <!-- <ImageView
+            android:id="@+id/iv_tx"
+            android:background="@color/text_white"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_more">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sy_16" />
+
+            <TextView
+                android:id="@+id/tv_error_input2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding_normal"
+                android:text="若多次查询都找不到原题\n您可以直接以照片的形式保存错题信息"
+                android:textColor="@color/text_gray_q"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:id="@+id/tv_error_input3"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:padding="3dp"
+                android:background="@drawable/round_blue_background"
+                android:gravity="center"
+                android:text="直接录入"
+                android:textColor="@color/text_white"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <View style="@style/Line.Hor" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_btn_height"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_error_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/text_white"
+            android:gravity="center"
+            android:text="错题录入"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/bottom_text_size" />
+
+        <TextView
+            android:id="@+id/tv_camera"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="再拍一题"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/bottom_text_size" />
+    </LinearLayout>
+</RelativeLayout>

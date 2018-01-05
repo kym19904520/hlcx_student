@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/def_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/padding_normal"
+            android:src="@mipmap/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="张三"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/top_title_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/def_sub_bg"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入你要发送的内容"
+            android:textColorHint="@color/text_hint"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_gray_round"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/wd_17"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_above="@id/ll"
+        android:layout_marginTop="@dimen/top_height"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</RelativeLayout>

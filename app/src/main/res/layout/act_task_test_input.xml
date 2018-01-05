@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/Top_Back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="试卷录入"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/top_title_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title"
+        android:background="@color/def_sub_bg"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tv_subject_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="语文二年级其中考卷"
+            android:background="@color/def_sub_bg"
+            android:textColor="@color/text_gray_s"
+            android:textSize="@dimen/text_more"
+            android:gravity="center"
+            />
+        <View style="@style/Line.Hor_margin"/>
+        <RelativeLayout
+            android:background="@color/def_sub_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="老师：张伟"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_small"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_subject_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="115题"
+                android:layout_centerInParent="true"
+                android:textColor="@color/text_gray_q"
+                android:textSize="@dimen/text_small"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_subject_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="2017-04-13"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/text_gray_q"
+                android:textSize="@dimen/text_small"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:background="@color/def_sub_bg"
+            >
+        </ListView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_btn_height"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/error_pink"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/bottom_text_size" />
+
+    </LinearLayout>
+</RelativeLayout>

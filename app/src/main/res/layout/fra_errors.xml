@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="错题库"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/top_title_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="已移除"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/top_right_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_normal">
+
+        <TextView
+            android:id="@+id/tv_top_tab_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/error_by_left_selector"
+            android:paddingBottom="@dimen/padding_1_t_b"
+            android:paddingLeft="@dimen/padding_1_l_r"
+            android:paddingRight="@dimen/padding_1_l_r"
+            android:paddingTop="@dimen/padding_1_t_b"
+            android:text="错题扫除"
+            android:textColor="@color/error_text_selector"
+            android:textSize="@dimen/error_item_ts" />
+
+        <View style="@style/Line.Ver_margin" />
+
+        <TextView
+            android:id="@+id/tv_top_tab_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/error_by_center_selector"
+            android:paddingBottom="@dimen/padding_1_t_b"
+            android:paddingLeft="@dimen/padding_1_l_r"
+            android:paddingRight="@dimen/padding_1_l_r"
+            android:paddingTop="@dimen/padding_1_t_b"
+            android:text="知识点解析"
+            android:textColor="@color/error_text_selector"
+            android:textSize="@dimen/error_item_ts" />
+
+        <View style="@style/Line.Ver_margin" />
+
+        <TextView
+            android:id="@+id/tv_top_tab_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/error_by_right_selector"
+            android:paddingBottom="@dimen/padding_1_t_b"
+            android:paddingLeft="@dimen/padding_1_l_r"
+            android:paddingRight="@dimen/padding_1_l_r"
+            android:paddingTop="@dimen/padding_1_t_b"
+            android:maxLines="1"
+            android:text="智能组卷"
+            android:textColor="@color/error_text_selector"
+            android:textSize="@dimen/error_item_ts" />
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/def_sub_bg"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<net.lucode.hackware.magicindicator.MagicIndicator-->
+            <!--android:id="@+id/magic_indicator"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_gravity="center_horizontal" />-->
+
+    <!--</LinearLayout>-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="scrollable" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_weight="1" />
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_no_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sy_27"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~还没有错题奥~"
+            android:textSize="13sp"
+            android:layout_marginTop="30dp"
+            android:textColor="#b7b7b7"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_import"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_btn_height"
+        android:background="@color/colorPrimary"
+        android:text="导出错题"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/big_btn_text_size" />
+</LinearLayout>

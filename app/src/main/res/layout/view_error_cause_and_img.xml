@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_blue"
+            android:paddingBottom="@dimen/topic_title_padding"
+            android:paddingLeft="@dimen/topic_margin"
+            android:paddingTop="@dimen/topic_title_padding"
+            android:text="历史错误原因"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/top_title_size" />
+
+        <TextView
+            android:id="@+id/tv_error_cause"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/def_sub_bg"
+            android:text=""
+            android:paddingLeft="@dimen/topic_answer_margin"
+            android:paddingRight="@dimen/topic_answer_margin"
+            android:paddingBottom="@dimen/topic_answer_margin_top"
+            android:paddingTop="@dimen/topic_answer_margin_top"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_blue"
+            android:paddingBottom="@dimen/topic_title_padding"
+            android:paddingLeft="@dimen/topic_margin"
+            android:paddingTop="@dimen/topic_title_padding"
+            android:text="历史错误图片"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/top_title_size" />
+
+        <com.up.common.widget.MyGridView
+            android:id="@+id/mgv_error_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:background="@color/def_sub_bg"
+            android:focusable="false"
+            android:paddingBottom="@dimen/topic_answer_margin_top"
+            android:paddingLeft="@dimen/topic_answer_margin"
+            android:paddingRight="@dimen/topic_answer_margin"
+            android:paddingTop="@dimen/topic_answer_margin_top"
+            android:verticalSpacing="10dp" />
+    </LinearLayout>
+</LinearLayout>

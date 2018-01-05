@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_normal">
+
+            <ImageView
+                android:id="@+id/iv_mes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sy_6" />
+
+            <ImageView
+                android:id="@+id/iv_mes_num"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignRight="@id/iv_mes"
+                android:src="@drawable/circle_red_background"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_renwu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sy_7" />
+
+            <ImageView
+                android:id="@+id/iv_renwu_num"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignRight="@id/iv_renwu"
+                android:src="@drawable/circle_red_background"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@mipmap/sy_8"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/sy_9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="拍照录题"
+            android:textColor="@color/text_white" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_white_background"
+            android:drawableLeft="@mipmap/sy_10"
+            android:drawablePadding="15dp"
+            android:ems="14"
+            android:hint="搜索录题"
+            android:padding="10dp"
+            android:textColor="@color/text_gray_s"
+            android:textColorHint="@color/text_hint"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/magic_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/bg_gray"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_not_clear"
+            style="@style/home_ll_style">
+
+            <Button
+                style="@style/home_btn_style"
+                android:text="@string/home_01" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                style="@style/home_tv_style"
+                android:text="0题" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_already_clear"
+            style="@style/home_ll_style">
+
+            <Button
+                style="@style/home_btn_style"
+                android:text="@string/home_02" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                style="@style/home_tv_style"
+                android:text="0题" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_already_grasp"
+            style="@style/home_ll_style">
+
+            <Button
+                style="@style/home_btn_style"
+                android:text="@string/home_03" />
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:text="0题"
+                style="@style/home_tv_style" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/home_tv_01"
+        style="@style/home_tv_01_style" />
+
+    <TextView
+        style="@style/home_tv_01_style"
+        android:text="@string/home_tv_02" />
+
+    <TextView
+        android:text="@string/home_tv_03"
+        style="@style/home_tv_01_style" />
+</LinearLayout>

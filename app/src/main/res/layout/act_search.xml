@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color">
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/Top_Back" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:drawablePadding="15dp"
+            android:layout_centerHorizontal="true"
+            android:hint="手动查询"
+            android:textColorHint="@color/text_hint"
+            android:ems="13"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@mipmap/sy_10"
+            android:textColor="@color/text_gray_s"
+            android:background="@drawable/round_white_background"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_right"
+            style="@style/Top_Right"
+            android:text="查询"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_blue"
+        android:padding="@dimen/text_padding_normal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史搜索"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv"
+        android:background="@color/def_sub_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>

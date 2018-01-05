@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/dialog_bg"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/dialog_close"
+        android:layout_alignParentRight="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_dialog_margin"
+            android:layout_marginRight="@dimen/home_dialog_margin">
+
+            <TextView
+                android:id="@+id/tv_1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="作业通知"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_more" />
+
+            <TextView
+                android:id="@+id/tv_1_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/dialog_icon_1"
+                android:drawablePadding="@dimen/drawble_padding"
+                android:text="x0"
+                android:textColor="@color/text_black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_1_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/round_blue_background"
+                android:paddingBottom="@dimen/btn_text_padding_tp"
+                android:paddingLeft="@dimen/btn_text_padding_lr"
+                android:paddingRight="@dimen/btn_text_padding_lr"
+                android:paddingTop="@dimen/btn_text_padding_tp"
+                android:text="查看"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_more" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_dialog_margin"
+            android:layout_marginRight="@dimen/home_dialog_margin"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_2_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="试卷录入"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_more" />
+
+            <TextView
+                android:id="@+id/tv_2_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/dialog_icon_2"
+                android:drawablePadding="@dimen/drawble_padding"
+                android:text="x0"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_more" />
+
+            <TextView
+                android:id="@+id/tv_2_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/round_blue_background"
+                android:paddingBottom="@dimen/btn_text_padding_tp"
+                android:paddingLeft="@dimen/btn_text_padding_lr"
+                android:paddingRight="@dimen/btn_text_padding_lr"
+                android:paddingTop="@dimen/btn_text_padding_tp"
+                android:text="开始"
+                android:textColor="@color/text_white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/home_dialog_margin"
+            android:layout_marginRight="@dimen/home_dialog_margin"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_3_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="家庭作业"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_more" />
+
+            <TextView
+                android:id="@+id/tv_3_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/dialog_icon_3"
+                android:drawablePadding="@dimen/drawble_padding"
+                android:text="x0"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_more" />
+
+            <TextView
+                android:id="@+id/tv_3_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/round_blue_background"
+                android:paddingBottom="@dimen/btn_text_padding_tp"
+                android:paddingLeft="@dimen/btn_text_padding_lr"
+                android:paddingRight="@dimen/btn_text_padding_lr"
+                android:paddingTop="@dimen/btn_text_padding_tp"
+                android:text="开始"
+                android:textColor="@color/text_white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

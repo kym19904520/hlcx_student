@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color">
+        <ImageView
+            android:id="@+id/back"
+            style="@style/Top_Back" />
+
+        <TextView
+            style="@style/Top_Title"
+            android:text="家庭作业"
+            />
+        <TextView
+            android:id="@+id/tv_right"
+            style="@style/Top_Right"
+            android:text="答题卡"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/sy_51"
+        android:layout_gravity="right"
+        android:drawablePadding="@dimen/drawble_padding"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:text="1/1"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/camera/CameraPreview.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/camera/CropperImage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/camera/FocusView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/camera/ReferenceLine.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/camera/ShowCropperedActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/camera/Utils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/cropper/CropImageView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/cropper/cropwindow/CropOverlayView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/cropper/cropwindow/edge/Edge.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/cropper/cropwindow/edge/EdgePair.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/cropper/cropwindow/handle/CenterHandleHelper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/cropper/cropwindow/handle/CornerHandleHelper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/cropper/cropwindow/handle/Handle.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/cropper/cropwindow/handle/HandleHelper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/cropper/cropwindow/handle/HorizontalHandleHelper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/cropper/cropwindow/handle/VerticalHandleHelper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/cropper/util/AspectRatioUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/cropper/util/HandleUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/cropper/util/ImageViewUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/up/study/weight/cropper/util/PaintUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/anim" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/anim/loading.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_close_selector.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_ok_selector.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_takephoto_selector.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_show_croppered.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_take_phote.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/crop_image_view.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/image_view_layout.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_close_click.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_close_normal.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_ok_click.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_ok_normal.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_takephoto_click.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_takephoto_normal.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values/attrs.xml" charset="GBK" />
+  </component>
+</project>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/Top_Back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/top_title_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_update_psw"
+        style="@style/my_rl_style">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/my_item_ts" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:src="@mipmap/icon_goto" />
+    </RelativeLayout>
+
+    <View style="@style/Line.Hor_margin" />
+
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        style="@style/my_rl_style">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/my_item_ts" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:src="@mipmap/icon_goto" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_loginout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_btn_height"
+        android:layout_marginLeft="@dimen/big_btn_margin_l_r"
+        android:layout_marginRight="@dimen/big_btn_margin_l_r"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round_red_background"
+        android:text="退出登录"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/big_btn_text_size" />
+
+</LinearLayout>

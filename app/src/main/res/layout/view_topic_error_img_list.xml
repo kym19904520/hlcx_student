@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/def_sub_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/topic_margin"
+        android:layout_marginTop="@dimen/topic_margin"
+        android:drawableLeft="@mipmap/sy_20"
+        android:drawablePadding="@dimen/drawble_padding"
+        android:text="错误图片"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/topic_answer_title_text" />
+
+    <com.up.common.widget.MyGridView
+        android:id="@+id/mgv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/topic_answer_margin"
+        android:layout_marginRight="@dimen/topic_answer_margin"
+        android:layout_marginTop="@dimen/topic_answer_margin_top"
+        android:layout_marginBottom="@dimen/topic_answer_margin"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>

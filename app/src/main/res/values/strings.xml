@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">轻松学</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="error_reason_A">A.粗心，操作失误</string>
+    <string name="error_reason_B">B.知识点不懂</string>
+    <string name="error_reason_C">C.懂知识点，不懂答题思路</string>
+    <string name="error_reason_D">D.其他</string>
+    <string name="error_reason_1">粗心，操作失误</string>
+    <string name="error_reason_2">知识点不懂</string>
+    <string name="error_reason_3">懂知识点，不懂答题思路</string>
+    <string name="error_reason_4">其他</string>
+    <string name="error_clear">错题扫除</string>
+    <string name="no_error">~还没有错题奥~</string>
+    <string name="no_error_data">~还没有数据奥~</string>
+    <string name="no_message">还没有消息噢~</string>
+
+    <string name="dialog_hint">提示</string>
+    <string name="dialog_message">确认退出家庭作业？</string>
+    <string name="dialog_message_01">相似题全部答对，确认加入已掌握？</string>
+    <string name="home_tv_01">未扫除：错题录入后未订正题目</string>
+    <string name="home_tv_02">已扫除：原错题已订正但相似题未全部答对</string>
+    <string name="home_tv_03">已掌握：原错题已订正且相似题全部答对</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_off">取消</string>
+    <string name="dialog_select">请选择</string>
+    <string name="dialog_affirm_quit">确认退出登录？</string>
+    <string name="dialog_next">已经是最后一题了</string>
+
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+    <string name="home_01">未扫除</string>
+    <string name="home_02">已扫除</string>
+    <string name="home_03">已掌握</string>
+
+    <string-array name="error_select_array">
+        <item>未扫除</item>
+        <item>已扫除</item>
+        <item>已掌握</item>
+    </string-array>
+
+    <string name="next">下一题</string>
+    <string name="confirm">确定</string>
+    <string name="dialog_reform">重做本题</string>
+
+</resources>

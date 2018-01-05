@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_result_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/task_padding_1"
+        android:text="@string/error_reason_1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/task_text_title_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/task_padding_1"
+        android:paddingLeft="@dimen/task_padding_1"
+        android:paddingRight="@dimen/task_padding_1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="题数"
+                android:textColor="@color/text_gray_s"
+                android:textSize="@dimen/text_small" />
+            <TextView
+                android:id="@+id/tv_result_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_gray_s"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="错误占比"
+                android:textColor="@color/text_gray_s"
+                android:textSize="@dimen/text_small" />
+            <TextView
+                android:id="@+id/tv_result_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="83%"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

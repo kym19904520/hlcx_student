@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/Top_Back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="错题录入"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/top_title_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="提交"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/top_right_size" />
+    </RelativeLayout>
+
+    <com.up.study.weight.BottomScrollView
+        android:id="@+id/bottomScrollView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/top_height"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/errors_gap_height">
+
+                <include layout="@layout/view_topic_kgt_list" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/errors_gap_height">
+
+                <include layout="@layout/view_topic_error_reason" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/errors_gap_height">
+
+                <include layout="@layout/view_topic_error_img_list" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_pull_to_load"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/errors_gap_height"
+                android:background="@color/def_sub_bg"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="上拉显示解析"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_more" />
+
+            <LinearLayout
+                android:id="@+id/ll_load_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/errors_gap_height"
+                android:visibility="gone">
+
+                <include layout="@layout/view_answer_and_analysis" />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/errors_gap_height"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bg_blue"
+                        android:paddingBottom="@dimen/topic_title_padding"
+                        android:paddingLeft="@dimen/topic_margin"
+                        android:paddingTop="@dimen/topic_title_padding"
+                        android:text="正确答案"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/top_title_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/def_sub_bg"
+                        android:paddingBottom="@dimen/topic_answer_margin_top"
+                        android:paddingTop="@dimen/topic_answer_margin_top">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/topic_answer_margin"
+                            android:paddingTop="@dimen/topic_title_padding"
+                            android:text="正确答案是 "
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/top_title_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/topic_margin"
+                            android:paddingTop="@dimen/topic_title_padding"
+                            android:text="B"
+                            android:textColor="@color/text_red"
+                            android:textSize="@dimen/top_title_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/errors_gap_height"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bg_blue"
+                        android:paddingBottom="@dimen/topic_title_padding"
+                        android:paddingLeft="@dimen/topic_margin"
+                        android:paddingTop="@dimen/topic_title_padding"
+                        android:text="解题思路"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/top_title_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/def_sub_bg"
+                        android:paddingBottom="@dimen/topic_answer_margin_top"
+                        android:paddingTop="@dimen/topic_answer_margin_top">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/topic_answer_margin"
+                            android:paddingTop="@dimen/topic_title_padding"
+                            android:text="嫂子没有翘舌"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/top_title_size" />
+                    </LinearLayout>
+                </LinearLayout>-->
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.up.study.weight.BottomScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_btn_height"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_show_answer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="点击展示答案"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/bottom_text_size" />
+
+    </LinearLayout>
+</RelativeLayout>

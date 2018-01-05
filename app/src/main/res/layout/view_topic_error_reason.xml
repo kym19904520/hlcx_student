@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/def_sub_bg"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/topic_margin"
+        android:layout_marginTop="@dimen/topic_margin"
+        android:drawableLeft="@mipmap/sy_17"
+        android:drawablePadding="@dimen/drawble_padding"
+        android:text="错误原因"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/topic_answer_title_text" />
+
+    <LinearLayout
+        android:id="@+id/ll_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/topic_answer_margin"
+        android:layout_marginTop="@dimen/topic_answer_margin_top">
+
+        <TextView
+            android:id="@+id/tv_A"
+            style="@style/tv_topic_select"
+            android:text="√" />
+
+        <TextView
+            style="@style/tv_topic_answer"
+            android:text="@string/error_reason_A" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/topic_answer_margin"
+        android:layout_marginTop="@dimen/topic_answer_margin_top">
+
+        <TextView
+            android:id="@+id/tv_B"
+            style="@style/tv_topic_select"
+            android:text="√" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/tv_topic_answer"
+            android:text="@string/error_reason_B" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/topic_answer_margin"
+        android:layout_marginTop="@dimen/topic_answer_margin_top">
+
+        <TextView
+            android:id="@+id/tv_C"
+            style="@style/tv_topic_select"
+            android:text="√" />
+
+        <TextView
+            style="@style/tv_topic_answer"
+            android:text="@string/error_reason_C" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_D"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/topic_answer_margin"
+        android:layout_marginTop="@dimen/topic_answer_margin_top">
+
+        <TextView
+            android:id="@+id/tv_D"
+            style="@style/tv_topic_select"
+            android:text="√" />
+
+        <TextView
+            style="@style/tv_topic_answer"
+            android:text="@string/error_reason_D" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_D"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/topic_answer_margin"
+        android:layout_marginLeft="@dimen/topic_answer_margin"
+        android:layout_marginRight="@dimen/topic_answer_margin"
+        android:layout_marginTop="@dimen/topic_answer_margin_top"
+        android:background="@drawable/border_gray_round"
+        android:hint="其他错误原因..."
+        android:padding="10dp"
+        android:textColorHint="@color/text_hint" />
+</LinearLayout>

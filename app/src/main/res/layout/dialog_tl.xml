@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/def_sub_bg"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="题量范围：5-100"
+        android:textColor="@color/text_gray_s"
+        android:textSize="@dimen/margin_more"
+        />
+    <View style="@style/Line.Hor"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <cn.qqtheme.framework.widget.WheelView
+                android:id="@+id/wheel_1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:padding="10dp" />
+            <cn.qqtheme.framework.widget.WheelView
+                android:id="@+id/wheel_line"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:padding="10dp" />
+
+            <cn.qqtheme.framework.widget.WheelView
+                android:id="@+id/wheel_section"
+                android:layout_width="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            >
+            <View
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/bg_blue_select_alpha"
+                android:padding="10dp" />
+            <View
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/bg_blue_select_alpha"
+                android:padding="10dp" />
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/bg_blue_select_alpha"
+                android:padding="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View style="@style/Line.Hor"/>
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_btn_height"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/bottom_text_size" />
+    </LinearLayout>
+</LinearLayout>
